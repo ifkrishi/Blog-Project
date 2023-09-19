@@ -3,11 +3,13 @@ import router from "./routes/articles.js";
 import mongoose from 'mongoose';
 import Article from "./models/article.js";
 import methodOverride from "method-override";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const port = 3000;
 
-mongoose.connect('mongodb+srv://ifkrishi:xlNgDxt43evUZlrf@mongodbyoutube.2hncw3u.mongodb.net/blog');
+mongoose.connect(process.env.Mongo_URI);
 //Middlewares
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
