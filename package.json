@@ -1,0 +1,24 @@
+{
+  "name": "37.1-blog-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dompurify": "^3.0.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jsdom": "^22.1.0",
+    "marked": "^9.0.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.5.2",
+    "nodemon": "^3.0.1",
+    "slugify": "^1.6.6"
+  }
+}
